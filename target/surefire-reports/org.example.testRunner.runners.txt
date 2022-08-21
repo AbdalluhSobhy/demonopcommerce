@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: org.example.testRunner.runners
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 383.551 s <<< FAILURE! - in org.example.testRunner.runners
+org.example.testRunner.runners.runScenario["first slider (Nokia Lumia 1020) is clickable on home page", "F06_homeSliders | user could click on Sliders"](12)  Time elapsed: 16.595 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D06_homeSlidersStepDef.userGoToNokiaLumiaPage(D06_homeSlidersStepDef.java:34)
+	at ✽.user go to Nokia Lumia 1020 page(file:///D:/MY%20Brojct/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:6)
+
+org.example.testRunner.runners.runScenario["second slider (iPhone) is clickable on home page", "F06_homeSliders | user could click on Sliders"](13)  Time elapsed: 16.342 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefs.D06_homeSlidersStepDef.userGoToIPhonePage(D06_homeSlidersStepDef.java:28)
+	at ✽.user go to iPhone  page(file:///D:/MY%20Brojct/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:11)
+
+org.example.testRunner.runners.runScenario["user opens rss link", "F07_followUs | users could open followUs links"](16)  Time elapsed: 17.396 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefs.D07_followUsStepDef.userOpensRssLink(D07_followUsStepDef.java:40)
+	at ✽.user opens rss link(file:///D:/MY%20Brojct/demonopcommerce/src/main/resources/features/F07_followUs.feature:15)
+
