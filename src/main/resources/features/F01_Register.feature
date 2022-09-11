@@ -10,3 +10,4 @@ Feature: F01_Register | users could register with new accounts
       And user enter password fields "P@ssw0rd" "P@ssw0rd"
       And user click in register button
       Then success massage displayed
+      Then success massage displayed
